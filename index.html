@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Fotbal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista Fotbal</h1>
+    <div id="main-list">
+        <input type="text" id="player-name" placeholder="Nume jucător">
+        <button onclick="addPlayer()">Adaugă</button>
+        <button onclick="deleteMainList()">Șterge Lista</button>
+        <ul id="player-list"></ul>
+    </div>
+
+    <h2>Lista de așteptare</h2>
+    <div id="waiting-list">
+        <input type="text" id="waiting-player-name" placeholder="Nume jucător">
+        <button onclick="addWaitingPlayer()">Adaugă</button>
+        <ul id="waiting-player-list"></ul>
+    </div>
+
+    <h2>Note jucători</h2>
+    <div id="rating-list">
+        <ul id="rating-player-list"></ul>
+        <button onclick="generateTeams()">Generează Echipe</button>
+    </div>
+    <div id="teams"></div>
+    <button onclick="regenerateTeams()">Regenerare Echipe</button>
+    <button onclick="deleteTeams()">Ștergere Echipe</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
